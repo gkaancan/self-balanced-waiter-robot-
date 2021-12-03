@@ -1,0 +1,12 @@
+
+
+
+<launch>
+
+
+<param name="passive_cubelet_1" textfile="/home/kaan/catkin_ws/src/self_balancing_robot/urdf/disk.xacro"/> 
+<node args="-urdf -param passive_cubelet_1 -x 0.58 -y 0.0 -z 0.585 -R 0.0 -P 0.0 -Y 0.0 -model passive_cubelet_1" name="spawn_passive_cubelet_1" output="screen" pkg="gazebo" respawn="false" type="spawn_model"/>
+<param name="inverse_cubelet_2" textfile="/home/kaan/catkin_ws/src/self_balancing_robot/urdf/disk2.xacro"/>
+<node args="-urdf -param inverse_cubelet_2 -x 0.748 -y 0.0 -z 0.585 -R 0.0 -P 0.0 -Y 0.0 -model inverse_cubelet_2" name="spawn_inverse_cubelet_2" output="\screen" pkg="gazebo" respawn="false" type="spawn_model"/>
+
+</launch>
